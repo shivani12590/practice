@@ -1,0 +1,287 @@
+-------------------------->dictionary<-------------------------------------------------
+dictionary is the collection of key value pairs.
+define in {}
+keys should be unique.
+unordered.
+
+a = {
+    1: "shivani",
+    2: "arbaz",
+    3: "adika"
+
+}
+output--> {1: 'shivani', 2: 'arbaz', 3: 'adika'}
+
+dictionary cannot contains duplicate keys but it contains duplicate values.
+if we try to add duplicate key it will delete first ones and consider updated one.
+
+# duplicate keys
+
+a = {
+    1: "shivani",
+    2: "arbaz",
+    2: "adika"
+
+}
+
+output--> {1: 'shivani', 2: 'adika'}
+
+# duplicate values
+
+a = {
+    1: "shivani",
+    2: "adika",
+    3: "adika"
+
+}
+print(a)
+
+output--> {1: 'shivani', 2: 'adika', 3: 'adika'}
+
+
+
+mutable.
+we can update the elements.
+
+
+g = {
+    "1":"shivani",
+    4:3,
+    2.0:"shiv"
+}
+print(g)
+g["1"]="arbaz"
+print(g)
+
+output-->{'1': 'shivani', 4: 3, 2.0: 'shiv'}
+
+         {'1': 'arbaz', 4: 3, 2.0: 'shiv'}
+
+
+for key we can use any data type
+same for values. we can use any data type
+#can use any data type for key and value
+
+d = {
+    "1":"shivani",
+    4:3,
+    2.0:"shiv"
+}
+print(d)
+
+output---> {'1': 'shivani', 4: 3, 2.0: 'shiv'}
+
+we can access each element of dictionary using key
+
+
+d = {
+    "1":"shivani",
+    4:3,
+    2.0:"shiv"
+}
+
+print(d["1"])
+print(d[4])
+
+output-->shivani
+         3
+
+
+--------------------------------->dictionary methods<---------------------------------------------------------------------------
+
+# printing keys ------------------->
+print(g.keys())
+
+# printing values------------------>
+print(g.values())
+
+#printing items-------------------->
+print(g.items())
+
+#inserting elements------------------>
+#first way
+d = {
+    "1":"shivani",
+    4:3,
+    2.0:"shiv"
+}
+
+di={"2":"adika"}
+d.update(di)
+
+print(d)
+
+output--> {'1': 'shivani', 4: 3, 2.0: 'shiv','2':'adika'}
+
+#second way
+
+d = {
+    "1":"shivani",
+    4:3,
+    2.0:"shiv"
+}
+
+d["2"]="arbaz"
+print(d)
+
+output-->{'1': 'shivani', 4: 3, 2.0: 'shiv','2':'arbaz'}
+
+#access single element--------------------->
+
+first way
+
+d = {
+    "1":"shivani",
+    4:3,
+    2.0:"shiv"
+}
+
+print(d.get("1"))
+
+output-->shivani
+
+second way
+
+d = {
+    "1":"shivani",
+    4:3,
+    2.0:"shiv"
+}
+
+print(d["1"])
+
+output-->shivani
+
+but the difference is if the value is not present in dictionary get method returns none value
+and this method gives error 
+
+
+clear()------------>
+to delete all key value pairs in dictionary.
+d = {
+    "1":"shivani",
+    4:3,
+    2.0:"shiv"
+}
+
+
+d.clear()
+print(d)
+
+
+output---------->
+
+{}
+
+
+pop()------------------------>
+delete single pair
+
+d = {
+    "1":"shivani",
+    4:3,
+    2.0:"shiv"
+}
+
+
+d.pop(4)
+
+print(d)
+
+output----------------------->
+
+d = {
+    "1":"shivani",
+    2.0:"shiv"
+}
+
+
+
+
+
+------------------------------------------>SET<-----------------------------------------------------------
+
+set is the collection of non repitative elements.
+set is unordered.
+set is unidexed.
+cant find elements using index.
+values should be unique.
+add method is used to add elements in set.
+we can store any kind of data in set.
+we can add tuple in set bt cant dictionary and list because list and dictionary are mutable.
+
+s={1,3,6}
+print(s)
+
+#empty set
+
+s=set()
+print(type(s))
+
+
+#adding elements
+s.add(1)
+s.add(2)
+
+
+#removing elements
+s.remove(23)
+
+#it will remove any random element from set
+s.pop()
+
+#calculate length
+len(s)
+
+#deleting all elements from the set
+s.clear()
+
+#merging elements of two sets
+a={3,4,5,7,89}
+b={2,3,4,1}
+c=set()
+c=a.union(a,b)
+print(c)
+
+#finding common elements between two sets
+c=a.intersection(a,b)
+print(c)
+
+
+
+#adding certificates
+
+git clone
+
+cd project name
+
+git checkout develop
+
+git pull 
+
+git branch
+
+
+
+git checkout -b new branch name
+
+git status
+
+git add .
+
+git commit -a -m "added certificates"
+
+git push -u origin branch ame
+
+create pull request after aproval merge it .
+
+git merge 
+
+
+
+
+
+
+
+
+

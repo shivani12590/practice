@@ -1,0 +1,6 @@
+predictive maintenance
+
+power bi and tablue
+LOSS
+ERROR
+TRAINING DATA--->TEST DATA---->REAL TIME DATA

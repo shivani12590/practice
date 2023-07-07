@@ -1,0 +1,120 @@
+--------->variables and datatypes<----------------------
+name given to the memory location
+
+varibles are use to store values
+
+built-in data typle---------->
+
+
+text type:      str
+numeric types:  int,float,complex
+sequence types: list,tuple,range
+set types:      set,frozenset
+boolean type:   bool
+none
+
+we no need to specified the type of variable in python
+
+we can define same variables in one file 
+difference is if we assign other value to that variable from the next time it will replace with new value
+
+one value can be store multiple values
+eg.
+age=Age=AGE="Python"
+
+
+printing type of variable
+
+print(type(a))
+
+definning variables rules------------------------------------------->
+variable can contains alphabets,numerics,digits,underscores.
+varibale only start with alphabets and underscore.
+variable cant start with digits
+no space allowed in variables
+
+
+--------------->operators in python<----------------------------------
+
+arithmetic operators---->[+,-,*,%,/]
+logical operators------>[and,or,not]
+comparision operators----->[>,<,>=,<=,==]
+assignment operators------>[=,+=,-=,%=,/=]
+
+------>typecasting<-----------------------------------------------
+
+float()
+int()
+str()
+
+# integer to string
+b = 20
+print(b,type(b))
+c=str(b)
+print(c,type(c))
+
+# integer to string
+c=10
+print(type(c))
+c=str(c)
+print(type(c))
+
+# string to integer
+
+a="10"
+print(a,type(a))
+a=int(a)
+print(type(a))
+
+# integer to float
+a=10
+print(type(a))
+a=float(a)
+print(type(a))
+
+# float to integer
+b=90.5
+print(type(b))
+b=int(b)
+print(type(b))
+
+# string to float
+c="445"
+print(type(c))
+c=float(c)
+print(type(c))
+
+# float to string
+
+d=90.8
+print(type(d))
+d=str(d)
+print(type(d))
+
+
+----------------->userInput<-------------------------------
+
+input()
+---this function allows us to take inputfrom the keyboard as string.
+whenever we take input from user it will give that value in string even if it is an integer we have convert that string into integer if there is an integer value .
+
+a=input("enter first number")
+print(a)
+
+b = input("enter second number")
+print(b)
+print("sum is : "+str(int(a)+int(b)))
+
+c=input("enter your age")
+c=int(c)
+print(c,type(c))
+
+d=int(input("enter no"))
+print(d)
+
+
+
+
+
+
+

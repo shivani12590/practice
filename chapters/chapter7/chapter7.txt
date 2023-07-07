@@ -1,0 +1,43 @@
+<------------------------------->loops<---------------------------------------->
+
+while loop
+
+i=0
+while i<10:
+print("")
+i=i+1
+
+
+for loop
+
+for i in range(0,10):
+print(i)
+
+
+for loop with break
+for i in range(0,10)
+print(i)
+   if i==5
+    break
+
+
+for loop with continue
+
+for i in range(10,20)
+print(i)
+ if i==12
+  conitnue
+
+
+
+li=["1","2","3"]
+for li1 in li:
+print(li1)
+
+
+li=["1","2","3"]
+i=0
+l=len(li)-1
+while(i<=l):
+print(li)
+

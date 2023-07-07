@@ -1,0 +1,48 @@
+-------------------------->conditions<--------------------------------
+if else
+if elif else
+nested if/and operator
+
+eg.1------------------------------------------>
+p=10
+if(p>5):
+    print("p is greater")
+else:
+    print("p is small")
+
+
+eg.2------------------------------------------>
+p="sunday"
+if(p=="monday"):
+    print("monday")
+elif(p=="tuesday"):
+    print("tuesday")
+elif (p== "wednesday"):
+    print("wednesday")
+elif(p=="saturday"):
+    print("saturday")
+else:
+    print("invalid msg")
+
+eg.3-------------------------------------------->
+
+age=19
+vacc=2
+if(age>18):
+    if(vacc==2):
+        print("eligible")
+    else:
+        print("invalid vacc")
+else:
+    print("invalid age")
+
+eg.4-------------------------------------------->
+
+if(age>18 and vacc==2):
+    print("eligible")
+else:
+    print("invalid")
+
+
+
+

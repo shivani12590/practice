@@ -1,0 +1,254 @@
+---------------------------------->strings<-----------------------------
+
+string is data type in python
+string contains numbers,alphabets,characters,special characters.
+eg. "123dgf","efee6#2"
+we can define string in double quotes and single quotes and triple single quotes and triple double quotes.
+eg. "shivani",'arbaz','''adika'''.
+ '''adika'''-->use of triple quotes is whenever we want structural string means as it is then we can use triple qotes.
+
+------------------------------->string slicing<-------------------------
+
+a string in python  can be sliced for getting a part of string.
+the index of string starts with 0.
+if we want any character from the string we can take it using index no.
+eg-->
+
+d="shivani"
+print(d[2])
+
+if u try index no which is not their then it will give error which is index out of range.
+you cant change the value of string.
+you cant replace any single character of the string using directly assigning method.
+
+eg-->
+
+c="shivani"
+c[5]="g"
+
+it will give error:object does not support item assignment.
+
+string slicing eg.-->
+
+1] c="shivani"
+   print(c[0:3])
+
+output-->shi
+
+2] c="arbaz"
+   print(c[1:3])
+
+output-->rb
+
+
+here left side is included and the right side is excluded.
+exclude means it will not calculated(no-1).
+
+if we write slice like this
+
+c="arbaz"
+   print(c[:3])
+
+output-->arb
+
+in the included part if we keep that blank it will automatically take minimum index which is 0.
+
+if we write slice like this
+
+c="arbaz"
+   print(c[1:])
+
+output-->rbaz
+
+in the excluded part if we keep that blank then it will print or take entire string from the included number.
+
+negative indexes------------------->
+negative indexes start from -1 and it counts from last.
+
+
+f="aditya"
+print(f[-4:-1])
+
+output-->ity
+
+
+----------------------------------------->string functions<--------------------------------------------------------
+
+
+len()--------------------------->
+
+len() is used for calculate length of string.
+length is calculated from 1.
+
+eg. f="shivani"
+    d=len(f)
+    print(d)
+
+output--> 7
+
+so if we want to access last character of string u can use length-1.
+
+eg. d="shiv"
+    h=len(d)-1
+    print(d[h])
+
+output----> v
+
+
+endswith()-------------------->
+
+endswith() is used to check whether the string is ends with particular variable,value,character or not.
+it returns bolean value.
+
+eg. f="shivani"
+    print(f.endswith("ni"))
+
+outptut-->true
+
+eg. g="dips"
+    print(g.endswith("k"))
+
+output--->false
+
+count()-------------------->
+
+count() it is used to count and occurence of particular character.
+
+eg.
+
+f="shiiv"
+print(f.count('i'))
+
+output--> 2
+
+eg.2
+
+k='shiv padale'
+print(k.count("shiv"))
+
+output--> 1
+
+capitilize()---------------->
+
+it is used to capitalize the first charater of string
+
+eg.
+b='shivani padale'
+print(b.capitalize())
+
+output---->Shivani Padale
+
+find()------------------------->
+
+it is used to find particular character or word from the string and if it is their it will return index of first occurence of that character.
+if that character is not present inside the string then it will return -1.
+
+eg.
+f="shivani"
+print(f.find('w'))
+
+output--> -1
+
+eg.
+g="arbaz"
+print(g.find('a'))
+
+output-----> 0
+
+
+eg.
+g="arbaz"
+print(g.find('z'))
+
+output-----> 4
+
+
+replace()------------------------->
+
+it is used to replace old character/word with new character/word in the entire screen.
+
+eg.
+x="shivani"
+print(x.replace("s","d"))
+
+output---->dhivani
+
+eg.
+
+y="shivani padale"
+print(y.replace("padale","shaikh")
+
+output---> shivani shaikh
+
+
+-------------------------------->escape sequence characters<------------------------------------------------
+
+\n---->new line
+\t---->tab
+\'---->single quote
+\\---->backslash
+
+examples:
+
+# \n
+s="shivani \npadale"
+print(s)
+
+output--> shivani
+          padale
+
+# \t
+s="shivani padale \tsurve"
+print(s)
+
+output-->shivani padale 	surve
+
+# \'
+s="shivani padale \'surve\'"
+print(s)
+
+output---->shivani padale 'surve'
+
+s="shiani padale \"surve\""
+print(s)
+
+output---->shiani padale "surve"
+
+s="shivani anil \\padale\\"
+print(s)
+
+output---->shivani anil \padale\
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,270 @@
+------------------------------------>lists<--------------------------------
+lists are the ordered in the python.
+it contains any type of elements.
+it declare with [].
+duplicate values allow.
+we can update the existing values in the list.
+
+eg.
+
+# creating list of same data dytpe
+li=[1 ,2,3 ,4]
+print(li)
+
+output--> [1, 2, 3, 4]
+
+# creating list of different data types
+li1=["shivani","arbaz","adika",1,6,6.7,True]
+print(li1)
+
+output--> ['shivani', 'arbaz', 'adika', 1, 6, 6.7, True]
+
+
+---------------------------------->ListSlicing<------------------------
+it is similar to the string.
+list index also starts from 0.
+if we want particular part from list we can use slicing.
+
+eg.
+
+li=[1,2,3,4,4]
+print(li[0:4])
+
+output--> [1, 2, 3, 4]
+
+li1=["shivani","arbaz","adika","aditya",90,6.5]
+print(li1[0:])
+print(li1[:3])
+print(li1[-4:])
+print(li1[1:4])
+print(li1[2:3])
+
+output-->
+ ['shivani', 'arbaz', 'adika', 'aditya', 90, 6.5]
+['shivani', 'arbaz', 'adika']
+['adika', 'aditya', 90, 6.5]
+['arbaz', 'adika', 'aditya']
+['adika']
+
+
+
+------------------------------->listMethods<-------------------------------------
+
+sort()----------------------->
+
+-it is used to sort elements.
+when we apply sort function on list it will change the original list.
+after sorting,original list will not remains the same.
+
+eg.1]
+li = [23, 35, 61, 12, 23, 1, 6, 89]
+print(li)
+li.sort()
+print(li)
+
+output-->
+
+[23, 35, 61, 12, 23, 1, 6, 89]
+[1, 6, 12, 23, 23, 35, 61, 89]
+
+
+reverse()---------------------->
+
+it is used to reverse the elements of list.
+when we apply reverse function on list it will change the original list.
+after reversing,original list will not remains the same.
+
+eg.
+
+li=[21,45,231,56]
+li.reverse()
+print(li)
+
+output--->
+
+[56, 231, 45, 21]
+
+append()---------------------->
+
+it is used to add new element in list.
+it will add the new element on the next index.
+
+eg.
+li=[2,3,4,5,7,8]
+print(li)
+li.append(1)
+print(li)
+
+output--->
+
+[2,3,4,5,7,8]
+[2, 3, 4, 5, 7, 8, 1]
+
+
+
+insert()--------------------->
+it is used to insert element on particular index.
+
+after inserting element on any index,element which is already exist on that index it will never get delete,it will shift on the next index.
+
+eg.
+
+li=[1,2,3,5,7,8]
+print(li)
+li.insert(2,45)
+print(li)
+
+output--->
+
+[1, 2, 3, 5, 7, 8]
+[1, 2, 45, 3, 5, 7, 8]
+
+pop()------------------------->
+
+it is used to delete element using index.
+the element which is present on that index it will get delete.
+we can use del keyword also to delete any element from list using index.
+
+eg.
+li=[5,6,8,9]
+print(li)
+li.pop(2)
+print(li)
+
+output-->
+[5, 6, 8, 9]
+[5, 6, 9]
+
+
+eg.
+li=[1,2,3,4]
+del li[0]
+print(li)
+
+output--->
+[2,3,4]
+
+
+remove()---------------------->
+
+it is also used to delete element but parameter is value.
+if that value is present in the list it will get delete.
+
+eg.
+li=[76,45,67,89,3]
+print(li)
+li.remove(76)
+print(li)
+
+output--->
+[76, 45, 67, 89, 3]
+[45, 67, 89, 3]
+
+if value is not present it will give an error.
+ValueError: list.remove(x): x not in list
+
+eg.
+
+li=[76,45,67,89,3]
+print(li)
+li.remove(90)
+print(li)
+
+output-->
+
+[76, 45, 67, 89, 3]
+Traceback (most recent call last):
+  File "C:\Users\CA-SHIVANI PADALE\PycharmProjects\pythonProject\chapters\chapter4\listMethods.py", line 39, in <module>
+    li.remove(90)
+ValueError: list.remove(x): x not in list
+
+
+index()------------->
+
+it is used to find the index of particular value.
+
+extend()----------->
+
+it is used to merge/combine two list together.
+and it is used to add other list 
+
+eg.
+li=[1,2,3]
+li1=[4,5,6]
+li.extend(li1)
+print(li)
+
+output------------->
+
+[1,2,3,4,5,6]
+
+
+max()------------>
+it is used to find maximum element in list.
+
+min()------------->
+it is used to find minimum element in list.
+
+
+len()------------->
+it is used to calculate the length of list.
+
+
+
+-------------------------------------->tuples<-------------------------------------------------------------------------
+
+it is used to store multiple elements
+we can store different data type values in single tuple.
+tuple is immutable
+we cant update elements in tuple.
+it is declare with ().
+for single element we have to add comma after element 
+because if the single element is their in tuple it behaves like normal number and single number/value.
+duplicate values allow.
+
+t=(1,2,3)
+print(t)
+
+
+t1=(1) # bad way because it will behaves like normal single number
+print(t1)
+
+t1=(1,)
+print(t1)
+
+t=(1,"shiv",4.5)
+print(t)
+
+count()
+index()
+sum()
+
+
+
+difference between list and tuple
+we can update elements in list
+we cant update elements in tuple bcz tuple is immutable.
+list declared with [].
+tuple declared with ().
+tuple is faster than list bcz no updation in tuple
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
